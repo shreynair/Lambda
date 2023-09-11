@@ -1,6 +1,5 @@
 # You should write all four classes in this file
 
-from turtle import pos
 
 
 class Person:
