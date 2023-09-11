@@ -1,5 +1,5 @@
 from functools import reduce
-from pickle import TRUE
+
 
 def is_present(lst,x):
   for i in lst:
