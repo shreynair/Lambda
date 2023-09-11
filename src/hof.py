@@ -15,7 +15,7 @@ def uniq(lst):
   uniq_nums = []
   return list(map(lambda x,y: x if x not in uniq_nums else 0, lst, uniq_nums))
 
-
+# This is find_max
 def find_max(matrix):
   return reduce(lambda x,y: y if y > x else x, matrix, matrix[0][0])
 
