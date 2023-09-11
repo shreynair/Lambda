@@ -35,4 +35,3 @@ def map2(matrix,f):
   # return list(map(, matrix))
   raise Exception("Not Implemented")
 
-print(uniq([4,3,7,6,7]))
