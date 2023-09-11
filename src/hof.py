@@ -17,21 +17,21 @@ def uniq(lst):
 
 # This is find_max
 def find_max(matrix):
-  return reduce(lambda x,y: y if y > x else x, matrix, matrix[0][0])
+  return reduce(lambda x,y: y if y > x else x, matrix)
 
 def count_ones(matrix):
   return reduce(lambda x, y: x + reduce(lambda a, b: a + 1 if b == 1 else a + 0, y, 0), matrix, 0)
 
 def addgenerator(x):
-  return 0;
+  return lambda y: x + y 
 
 def apply_to_self():
-  return 0
+  return lambda e,f: e + f(e)
 
 def ap(fns,args):
   return 0
 
 def map2(matrix,f):
-  # return list(map(, matrix))
-  return 0
+  return list(map(lambda x: list(map(f, x)), matrix))
+
 
