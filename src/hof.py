@@ -13,11 +13,13 @@ def count_occ(lst,target):
 
 def uniq(lst):
   uniq_nums = []
-  return list(map(lambda x,y: x if x not in uniq_nums else 0, lst, uniq_nums))
+  return list(reduce(lambda new_lst, x: new_lst + [x] if x not in new_lst else new_lst, lst, []))
+
 
 # This is find_max
 def find_max(matrix):
-  return reduce(lambda x,y: y if y > x else x, matrix)
+  return reduce(lambda x, row: reduce(lambda a,b: b if b > a else a, row, x), matrix, 0)
+
 
 def count_ones(matrix):
   return reduce(lambda x, y: x + reduce(lambda a, b: a + 1 if b == 1 else a + 0, y, 0), matrix, 0)
