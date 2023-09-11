@@ -23,15 +23,15 @@ def count_ones(matrix):
   return reduce(lambda x, y: x + reduce(lambda a, b: a + 1 if b == 1 else a + 0, y, 0), matrix, 0)
 
 def addgenerator(x):
-  raise Exception("Not Implemented")
+  print()
 
 def apply_to_self():
-  raise Exception("Not Implemented")
+  print()
 
 def ap(fns,args):
-  raise Exception("Not Implemented")
+  print()
 
 def map2(matrix,f):
   # return list(map(, matrix))
-  raise Exception("Not Implemented")
+  print()
 
